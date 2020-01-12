@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -18,7 +17,9 @@ namespace R_OOP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            new DataIO().loadData(this);
+            new SQL().createTableWithContents();
+            lCategory = new DataIO().loadCategory();
+            updateListBox1();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -39,7 +40,19 @@ namespace R_OOP
         {
             var selectedMeal = lCategory[listBox1.SelectedIndex].lMeal[listBox2.SelectedIndex];
 
-            B.lMeal.Add(selectedMeal);
+            bool exists = false;
+
+            for (int i = 0; i < B.lMeal.Count; i++)
+            {
+                if (selectedMeal.getName() == B.lMeal[i].getName())
+                {
+                    B.lMeal[i].setCount(B.lMeal[i].getCount() + 1);
+                    exists = true;
+                }
+            }
+
+            if (!exists)
+                B.lMeal.Add(selectedMeal);
 
             updateListBox3();
 
@@ -93,15 +106,15 @@ namespace R_OOP
             listBox3.Items.Clear();
 
             for (int i = 0; i < B.lMeal.Count; i++)
-                listBox3.Items.Add(B.lMeal[i].getName());
+                listBox3.Items.Add(B.lMeal[i].getName() + " | x" + B.lMeal[i].getCount());
         }
 
         public void updateLabel3()
         {
-            float sum = 0;
+            double sum = 0;
 
             for (int i = 0; i < B.lMeal.Count; i++)
-                sum += B.lMeal[i].getPrice();
+                sum += B.lMeal[i].getPrice() * B.lMeal[i].getCount();
 
             label3.Text = string.Format("Užsakymo suma: {0}€", sum);
         }
@@ -111,6 +124,7 @@ namespace R_OOP
         private void button2_Click(object sender, EventArgs e)
         {
             new DataIO().outputData(this);
+            new SQL().addNewOrder(B);
         }
     }
 }

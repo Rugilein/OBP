@@ -2,7 +2,7 @@
 {
     public class Meal
     {
-        private int categoryID, mealID;
+        private int categoryID, mealID, Count = 1;
         private float Price;
         private string Name, Description, imagePath;
 
@@ -38,6 +38,11 @@
             imagePath = x;
         }
 
+        public void setCount(int x)
+        {
+            Count = x;
+        }
+
         #endregion
 
         #region GET
@@ -70,6 +75,11 @@
         public string getImagePath()
         {
             return imagePath;
+        }
+
+        public int getCount()
+        {
+            return Count;
         }
 
         #endregion
