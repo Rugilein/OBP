@@ -1,0 +1,8 @@
+2020-01-12 17:19:52
+
+Užsakymo numeris: 5
+
+1. Sūrainis  1€  | x8
+
+Suma be PVM: Užsakymo suma: 1€
+Suma su PVM: 1.24

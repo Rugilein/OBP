@@ -1,0 +1,11 @@
+1/12/2020 9:48:35 PM
+
+Užsakymo numeris: 21
+
+1. Kijevo kotletai  7€  | x1
+2. Jautienos kotletai  8€  | x1
+3. Pica su ananasais  7€  | x1
+4. Pepperoni pica  6€  | x1
+
+Suma be PVM: Užsakymo suma: 28€
+Suma su PVM: 34.72

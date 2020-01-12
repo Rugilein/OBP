@@ -1,0 +1,10 @@
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\bin\Debug\R_OOP.exe.config
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\bin\Debug\R_OOP.exe
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\bin\Debug\R_OOP.pdb
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\obj\Debug\R_OOP.csprojAssemblyReference.cache
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\obj\Debug\R_OOP.Properties.Resources.resources
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\obj\Debug\R_OOP.csproj.GenerateResource.cache
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\obj\Debug\R_OOP.csproj.CoreCompileInputs.cache
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\obj\Debug\R_OOP.exe
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\obj\Debug\R_OOP.pdb
+C:\Users\nerwo\source\repos\R_OOP\R_OOP\obj\Debug\R_OOP.Form1.resources

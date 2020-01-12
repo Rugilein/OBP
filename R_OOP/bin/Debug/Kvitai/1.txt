@@ -1,0 +1,8 @@
+2019-11-24 01:16:04
+
+Užsakymo numeris: 1
+
+1. Pica su ananasais  20€
+
+Suma be PVM: Užsakymo suma: 20€
+Suma su PVM: 24.8
