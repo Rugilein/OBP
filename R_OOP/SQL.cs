@@ -81,7 +81,7 @@ namespace OOP_5
 
 
                 //Users
-                sqlite_cmd.CommandText = "CREATE TABLE IF NOT EXISTS User (Username VARCHAR(256), Password VARCHAR(256))";
+                sqlite_cmd.CommandText = "CREATE TABLE IF NOT EXISTS User (Username VARCHAR(256), Password VARCHAR(256), UNIQUE(Username))";
                 sqlite_cmd.ExecuteNonQuery();
 
                 sqlite_cmd.CommandText = "INSERT OR IGNORE INTO User (Username, Password) VALUES('admin', 'admin')";
