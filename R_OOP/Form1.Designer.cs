@@ -1,4 +1,4 @@
-﻿namespace R_OOP
+﻿namespace OOP_5
 {
     partial class Form1
     {
@@ -42,6 +42,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -88,7 +89,7 @@
             this.listBox3.FormattingEnabled = true;
             this.listBox3.Location = new System.Drawing.Point(6, 19);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(132, 95);
+            this.listBox3.Size = new System.Drawing.Size(120, 95);
             this.listBox3.TabIndex = 4;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
@@ -157,14 +158,14 @@
             this.groupBox2.Controls.Add(this.listBox3);
             this.groupBox2.Location = new System.Drawing.Point(15, 171);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(311, 121);
+            this.groupBox2.Size = new System.Drawing.Size(292, 121);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Krepšelis";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(144, 91);
+            this.button3.Location = new System.Drawing.Point(132, 91);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(152, 23);
             this.button3.TabIndex = 10;
@@ -176,7 +177,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(144, 19);
+            this.label3.Location = new System.Drawing.Point(132, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 20);
             this.label3.TabIndex = 8;
@@ -184,7 +185,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(144, 62);
+            this.button2.Location = new System.Drawing.Point(132, 62);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 23);
             this.button2.TabIndex = 9;
@@ -192,11 +193,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(663, 262);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(125, 36);
+            this.button4.TabIndex = 9;
+            this.button4.Text = "Administratoriaus panelė";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 310);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
@@ -233,6 +245,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button4;
     }
 }
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace R_OOP
+namespace OOP_5
 {
     static class Program
     {

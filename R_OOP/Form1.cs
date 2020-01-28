@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace R_OOP
+namespace OOP_5
 {
     public partial class Form1 : Form
     {
@@ -31,7 +31,9 @@ namespace R_OOP
         {
             var selectedMeal = lCategory[listBox1.SelectedIndex].lMeal[listBox2.SelectedIndex];
 
-            pictureBox1.Image = Image.FromFile("img\\" + selectedMeal.getImagePath());
+            try { pictureBox1.Image = Image.FromFile("img\\" + selectedMeal.getImagePath()); }
+            catch { pictureBox1.Image = Image.FromFile("img\\failed.png"); }
+
             textBox1.Text = selectedMeal.getDescription();
             label4.Text = string.Format("Kaina: {0}€", selectedMeal.getPrice());
         }
@@ -123,8 +125,39 @@ namespace R_OOP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new DataIO().outputData(this);
-            new SQL().addNewOrder(B);
+            try
+            {
+                new DataIO().saveToTXT(this, B);
+                new SQL().addNewOrder(B);
+                MessageBox.Show("Užsakymas sėkmingai pridėtas!");
+            }
+            catch
+            {
+                MessageBox.Show("Įvyko klaida pridedant užsakymą!");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new pAdmin(this).Show();
+        }
+
+        public void reloadData()
+        {
+            lCategory = new DataIO().loadCategory();
+
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+
+            pictureBox1.Image = null;
+            pictureBox1.InitialImage = null;
+
+            textBox1.Text = null;
+            label4.Text = "Kaina: - €";
+            label3.Text = "Užsakymo suma: - €";
+
+            updateListBox1();
         }
     }
 }

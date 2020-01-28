@@ -1,6 +1,0 @@
-0|0|Vegetariškas mėsainis|6|Mėsainis su sūriu|Surainis.jpg
-1|0|Jautienos mėsainis|5|Mėsainis su jautiena|Jautienainis.jpg
-2|1|Pepperoni pica|6|Pica su pepperoni dešra|Pepperoni_pica.jpg
-3|1|Pica su ananasais|7|Pica su ananasais ir kumpiu|Pica_su_ananasais.jpg
-4|2|Kijevo kotletai|7|Kijevo kotletai (vištiena)|Kijevo_kotletai.jpg
-5|2|Jautienos kotletai|8|Jautienos kotletai|Jautienos_kotletai.jpg

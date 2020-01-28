@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace R_OOP
+namespace OOP_5
 {
     public class Category
     {
@@ -8,6 +8,7 @@ namespace R_OOP
         private string Name;
 
         public List<Meal> lMeal = new List<Meal>();
+        private int Constant;
 
         #region SET
 

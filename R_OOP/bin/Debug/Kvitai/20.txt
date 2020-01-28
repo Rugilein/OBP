@@ -1,9 +1,0 @@
-1/12/2020 9:27:59 PM
-
-Užsakymo numeris: 20
-
-1. Pica su ananasais  7€  | x2
-2. Pepperoni pica  6€  | x1
-
-Suma be PVM: Užsakymo suma: 20€
-Suma su PVM: 24.8

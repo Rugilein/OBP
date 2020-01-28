@@ -1,9 +1,9 @@
-﻿namespace R_OOP
+﻿namespace OOP_5
 {
     public class Meal
     {
         private int categoryID, mealID, Count = 1;
-        private float Price;
+        private double Price;
         private string Name, Description, imagePath;
 
         #region SET
@@ -57,7 +57,7 @@
             return mealID;
         }
 
-        public float getPrice()
+        public double getPrice()
         {
             return Price;
         }

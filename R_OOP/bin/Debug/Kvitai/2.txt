@@ -1,9 +1,0 @@
-2019-11-24 01:24:00
-
-Užsakymo numeris: 2
-
-1. Sūrainis  1€  | x6
-2. Studentiška pica  10€  | x3
-
-Suma be PVM: Užsakymo suma: 11€
-Suma su PVM: 13.64
